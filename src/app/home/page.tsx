@@ -33,14 +33,16 @@ import { ProyectsComponent } from '@/components/Proyects';
 
 
         <section className="parallax bg flex flex-col mb-5">
-            <h1>Some of my &lt; Proyects &gt;</h1>
-            <ProyectsComponent/>
+           
 
         </section>
-        <section className="no-parallax">
-            <h1>suscribete</h1>
+        <section className="no-parallax flex flex-col items-center space-y-4 p-4">
+    <div className='block text-center'>
+        <h1 className="text-3xl font-bold">Some of my &lt; Proyects &gt;</h1>
+    </div>
+    <ProyectsComponent />
+</section>
 
-        </section>
     </main>
     </>
   )
