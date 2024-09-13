@@ -1,0 +1,49 @@
+main{
+    height: 100vh;
+    overflow-x:hidden ;
+    overflow-y: auto;
+    perspective: 2px;
+  }
+
+  section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+.no-parallax h1{
+  font-size: 3.5rem;
+}
+.no-parallax h3{
+  font-size: 2rem;
+}
+.no-parallax{
+    background-color:#25223c ;
+    z-index: 999;
+    padding-left:12rem ;
+    padding-right: 12rem;
+}
+.parallax h1 {
+    width: 60%;
+    font-size: 2rem;
+}
+
+.parallax::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform:translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.bg::after{
+background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("../../../public/assets/fondoParallax.jpg");
+background-size: cover;
+}
