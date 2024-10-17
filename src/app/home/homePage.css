@@ -1,18 +1,25 @@
 main{
     height: 100vh;
+    width: 100%;
     overflow-x:hidden ;
     overflow-y: auto;
     perspective: 2px;
+    margin: 0;
+    padding: 0;
   }
 
   section {
     transform-style: preserve-3d;
     position: relative;
-    height: 100vh;
+    height: 106vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #ffffff;
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina padding */
+    width: 100%; 
   }
 .no-parallax h1{
   font-size: 3.5rem;
@@ -26,6 +33,7 @@ main{
     padding-left:12rem ;
     padding-right: 12rem;
 }
+
 .parallax h1 {
     width: 60%;
     font-size: 2rem;
@@ -43,7 +51,9 @@ main{
     z-index: -1;
 }
 
-.bg::after{
-background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("../../../public/assets/fondoParallax.jpg");
-background-size: cover;
+.bg::after {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../../../public/assets/fondoParallax.jpg");
+  background-size: cover;
+  background-position: center;
+  
 }

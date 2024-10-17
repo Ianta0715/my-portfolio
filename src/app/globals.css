@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -24,5 +25,40 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.projects-carousel {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  text-align: center;
+  padding: 20px;
+}
+.project-card img {
+  margin-left: 7rem;
+  border-radius: 15px; /* Opcional: un poco de borde redondeado */
+}
+.project-card a {
+  width: 100%;
+  padding: 2rem; /* La imagen ocupará todo el ancho del contenedor */
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+}
+.tec{
+  border-radius: 50%;
 }
 
