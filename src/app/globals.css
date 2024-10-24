@@ -62,3 +62,45 @@ body {
   border-radius: 50%;
 }
 
+@keyframes glowing{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+
+.button-git {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  position: relative;
+  border-radius: 50%; /* Aseguramos que el contenedor sea circular */
+  display: inline-block;
+  width: 384px; /* Asegúrate de que el ancho y alto sean iguales a la imagen */
+  height: 384px; /* El tamaño que usas para la imagen (w-96 h-96 = 384px) */
+}
+.button-git::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue
+  );
+  background-size: 800%;
+  border-radius: 50%; /* Hace que siga siendo redondo */
+  filter: blur(8px);
+  animation: glowing 35s linear infinite;
+}
+
+

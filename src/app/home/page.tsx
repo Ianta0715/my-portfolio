@@ -34,11 +34,13 @@ import Link from 'next/link';
   </div>
 
   <div className="lg:w-1/2 flex justify-center lg:justify-end mt-4 lg:mt-0">
-  <Image
-    alt="imagen de perfil"
-    src={imagenDePerfil}
-    className="w-96 h-96 ml-5 rounded-full object-cover shadow-lg transition-transform duration-700 ease-in-out transform hover:scale-95 hover:bg-gray-700"
-  />
+  <div className="button-git relative">
+    <Image
+      alt="imagen de perfil"
+      src={imagenDePerfil}
+      className="w-96 h-96 ml-1 rounded-full object-cover shadow-lg transition-transform duration-700 ease-in-out transform hover:scale-95"
+    />
+  </div>
 </div>
 
 </section>
