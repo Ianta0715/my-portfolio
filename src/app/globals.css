@@ -64,9 +64,7 @@ body {
   font-size: 1rem;
   color: #666;
 }
-.tec{
-  border-radius: 50%;
-}
+
 
 @keyframes glowing{
   0%{
@@ -209,6 +207,7 @@ body {
   background-color: #16a085;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
+
 
 
 
