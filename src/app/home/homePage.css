@@ -1,25 +1,31 @@
 main{
-    height: 100vh;
     width: 100%;
-    overflow-x:hidden ;
+    overflow-x:hidden;
     overflow-y: auto;
-    perspective: 2px;
     margin: 0;
     padding: 0;
+    background: transparent;
   }
 
-  section {
+  /* Only apply parallax styles to hero section */
+  .hero-section {
     transform-style: preserve-3d;
     position: relative;
-    height: 106vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    margin: 0; /* Elimina márgenes */
-    padding: 0; /* Elimina padding */
+    margin: 0;
+    padding: 0;
     width: 100%; 
+  }
+
+  /* Other sections should have auto height */
+  section:not(.hero-section) {
+    height: auto;
+    min-height: auto;
   }
 .no-parallax h1{
   font-size: 3.5rem;
