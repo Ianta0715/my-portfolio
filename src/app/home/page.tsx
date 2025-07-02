@@ -12,13 +12,13 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="flex flex-col min-h-screen overflow-x-hidden">
         <Hero />
         <About />
         <Tecnologies />
         <ProyectsComponent />
         <Contact />
-      <Footer />
+        <Footer />
       </main>
     </>
   );

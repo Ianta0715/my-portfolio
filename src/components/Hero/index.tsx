@@ -65,8 +65,11 @@ export const Hero = () => {
   };
 
   return (
-    <section className="hero-section min-h-screen flex items-center justify-center bg-transparent text-white pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className="hero-section flex flex-col items-start sm:flex-row sm:items-center justify-center bg-transparent text-white pt-4 sm:pt-10 pb-8 min-h-[500px] sm:min-h-[600px]"
+      style={{ scrollMarginTop: '64px' }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -169,7 +172,6 @@ export const Hero = () => {
               </div>
             </motion.div>
           </motion.div>
-
           {/* Profile Image */}
           <motion.div 
             variants={itemVariants}
@@ -185,7 +187,7 @@ export const Hero = () => {
                 <Image
                   alt="Ian Tarquini profile picture"
                   src={imagenDePerfil}
-                  className="w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl"
+                  className="w-40 h-40 xs:w-56 xs:h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full object-cover shadow-2xl"
                   priority
                 />
               </motion.div>
