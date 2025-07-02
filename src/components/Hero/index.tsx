@@ -76,7 +76,6 @@ export const Hero = () => {
           animate="visible"
           className="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-8 lg:space-y-0 lg:space-x-12"
         >
-          {/* Text Content */}
           <motion.div variants={itemVariants} className="lg:w-1/2 text-center lg:text-left">
             <motion.h1 
               variants={itemVariants}
