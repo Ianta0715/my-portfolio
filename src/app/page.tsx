@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { RiveAvatar } from "@/components/RiveAvatar";
 
 const LandingPage: React.FC = () => {
   return (
@@ -16,15 +17,26 @@ const LandingPage: React.FC = () => {
             <li className="content__container__list__item">everyone!</li>
           </ul>
         </div>
+
       </div>
-      
-      <div>
-        <Link href='/home'>
-          <button className="redirect-button">Enter Portfolio</button>
-        </Link>
-      </div>
+        <div className="flex justify-center">
+          <Link href='/home' legacyBehavior>
+            <div style={{ cursor: 'pointer' }}>
+              <RiveAvatar 
+                src="/rives/button.riv"
+                width={220}
+                height={220}
+                stateMachine="State Machine 1"
+                autoplay={true}
+              />
+            </div>
+          </Link>
+        </div>
     </div>
-  )
+  );
 }
 
+
+
 export default LandingPage;
+        

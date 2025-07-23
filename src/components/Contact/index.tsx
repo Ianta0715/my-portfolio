@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 export const Contact = () => {
   const containerVariants = {
@@ -78,23 +79,23 @@ export const Contact = () => {
             {/* Social Links */}
             <motion.div variants={itemVariants}>
               <h4 className="text-lg font-medium mb-6 text-white">Follow Me</h4>
-              <div className="flex justify-center space-x-6">
-                <a
+              <div className="flex justify-center space-x-4">
+                <Link
                   href="https://www.linkedin.com/in/ian-tarquini-b83b72247/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full transition-all duration-300 transform hover:scale-110"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} className="w-6 h-6" />
-                </a>
-                <a
+                  <FontAwesomeIcon icon={faLinkedin} className="w-7 h-7" />
+                </Link>
+                <Link
                   href="https://github.com/Ianta0715"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-700 hover:bg-gray-600 text-white p-4 rounded-full transition-all duration-300 transform hover:scale-110"
                 >
-                  <FontAwesomeIcon icon={faGithub} className="w-6 h-6" />
-                </a>
+                  <FontAwesomeIcon icon={faGithub} className="w-7 h-7" />
+                </Link>
               </div>
             </motion.div>
           </motion.div>
