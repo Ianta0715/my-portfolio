@@ -151,25 +151,6 @@ export const Hero = () => {
                 <FontAwesomeIcon icon={faDownload} className="w-6 h-6" />
               </button>
             </motion.div>
-            
-            {/* Continental Venture Capital */}
-            <motion.div 
-              variants={itemVariants}
-              className="mt-8 flex items-center justify-center lg:justify-start"
-            >
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 px-4 py-3 rounded-lg flex items-center space-x-3 hover:bg-white/10 transition-all duration-300">
-                <Image
-                  src="/assets/fondo-continental.png"
-                  alt="Continental Venture Capital"
-                  width={32}
-                  height={32}
-                  className="w-8 h-8 object-contain"
-                />
-                <span className="text-sm text-gray-300 font-medium">
-                  Currently at <span className="text-white">Continental Venture Capital</span>
-                </span>
-              </div>
-            </motion.div>
           </motion.div>
           {/* Profile Image */}
           <motion.div 

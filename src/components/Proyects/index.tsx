@@ -25,6 +25,15 @@ export const ProyectsComponent = () => {
       destacado: true
     },
     {
+      nombre: 'AiDactic',
+      url: 'https://dev.aidactic.com',
+      github: 'https://github.com/Ianta0715',
+      imagen: '/assets/aidactic.png',
+      skills: ['NextJS', 'React-admin', 'GraphQL', 'TypeScript', 'Axios', 'UX/UI','Rive animations'],
+      descripcion: 'A full-stack learning platform with modern authentication and real-time features that you can create and take diferent courses.',
+      destacado: true
+    },
+    {
       nombre: 'Journal App',
       url: 'https://iantarquini15.github.io/journalApp/',
       github: 'https://github.com/Ianta0715',

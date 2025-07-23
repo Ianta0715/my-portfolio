@@ -2,6 +2,7 @@
 import './homePage.css';
 import { ProyectsComponent } from '@/components/Proyects';
 import { Tecnologies } from '@/components/Tecnologies';
+import { WorkExperience } from '@/components/WorkExperience';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
@@ -16,6 +17,7 @@ const HomePage = () => {
         <Hero />
         <About />
         <Tecnologies />
+        <WorkExperience />
         <ProyectsComponent />
         <Contact />
         <Footer />
