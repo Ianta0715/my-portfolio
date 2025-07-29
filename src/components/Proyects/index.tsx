@@ -43,6 +43,15 @@ export const ProyectsComponent = () => {
       destacado: false
     },
     {
+      nombre: 'Box Fit',
+      url: 'https://gym-repo-rust.vercel.app/home',
+      github: 'https://github.com/Ianta0715',
+      imagen: '/assets/boxfit.png',
+      skills: ['vite', 'node', 'postgreSQL', 'Axios', 'vercel','render'],
+      descripcion: 'Fitness application with workout tracking and user authentication.',
+      destacado: false
+    },
+    {
       nombre: 'Heroes App',
       url: 'https://iantarquini15.github.io/heroApp/#/login',
       github: 'https://github.com/Ianta0715',
