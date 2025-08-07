@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import astroLogo from '../../../public/assets/astro.svg';
+import reactAdminLogo from '../../../public/assets/react-admin-photo.png';
 
 export const Tecnologies = () => {
   const containerVariants = {
@@ -36,9 +38,9 @@ export const Tecnologies = () => {
     { src: "https://devicon-website.vercel.app/api/python/original.svg", alt: "Python", link: "https://www.python.org/", category: "Language" },
     { src: "https://devicon-website.vercel.app/api/nextjs/line.svg", alt: "NextJS", link: "https://nextjs.org/", category: "Framework" },
     { src: "https://devicon-website.vercel.app/api/vuejs/original.svg", alt: "Vue.js", link: "https://vuejs.org/", category: "Framework" },
-    { src: "/assets/astro.svg", alt: "Astro", link: "https://astro.build/", category: "Framework" },
+    { src: astroLogo, alt: "Astro", link: "https://astro.build/", category: "Framework" },
     { src: "https://devicon-website.vercel.app/api/react/original.svg", alt: "React", link: "https://reactjs.org/", category: "Library" },
-    { src: "/assets/react-admin-foto.png", alt: "React-Admin", link: "https://marmelab.com/react-admin/", category: "library" },
+    { src: reactAdminLogo, alt: "React-Admin", link: "https://marmelab.com/react-admin/", category: "Library" },
     { src: "https://devicon-website.vercel.app/api/redux/original.svg", alt: "Redux", link: "https://redux.js.org/", category: "State Management" },
     { src: "https://devicon-website.vercel.app/api/tailwindcss/plain.svg", alt: "Tailwind CSS", link: "https://www.tailwindcss.com/", category: "Design" },
     { src: "https://devicon-website.vercel.app/api/materialui/original.svg", alt: "Material UI", link: "https://mui.com/", category: "Design" },
