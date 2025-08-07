@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import astroLogo from '../../../public/assets/astro.svg';
+import astroLogo from '../../../public/assets/astro.png';
 import reactAdminLogo from '../../../public/assets/react-admin-photo.png';
 
 export const Tecnologies = () => {
@@ -27,7 +27,7 @@ export const Tecnologies = () => {
         ease: "easeOut"
       }
     }
-  };
+  }; 
 
   const technologies = [
     { src: "https://devicon-website.vercel.app/api/html5/original.svg", alt: "HTML5", link: "https://en.wikipedia.org/wiki/HTML5", category: "Language" },
